@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakerMinds Vehicle Web</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    
+    <header>
+      <h1>MakerMinds Vehicle</h1>
+      <button class="menu__icon icon-menu open-nav-btn" type="button">
+        <span class="icon-menu__line"></span>
+      </button>
+      <p>Welcome to the best selection of cars!</p>
+    </header>
+  
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about-us">About Us</a>
+      <a href="#video-showcase">Video Showcase</a>
+      <a href="#contact-us">Contact Us</a>
+    </nav>
+    
+    <section class="first-wrapper">
+      Find your dream's car
+    </section>
+    
+    <section id="gallery">
+      <h2>Photos Gallery</h2>
+      <div class="gallery">
+        <img src="./photos/pexels-mike-bird-1335077.jpg" alt="Car 1">
+        <img src="./photos/pexels-pixabay-210019.jpg" alt="Car 2">
+        <img src="./photos/pexels-pixabay-358070.jpg" alt="Car 3">
+      </div>
+    </section>
+
+    <section id="about-us">
+        <div>
+            <h2>About us</h2>
+            <p>Discover the passion behind our website.</p>
+            <p>
+                At MakerMinds Vehicle, we are dedicated to providing you with the
+                finest selection of quality vehicles. Our team of experts is
+                passionate about cars and committed to ensuring your satisfaction.
+                With years of experience in the automotive industry, we strive to
+                exceed your expectations every time you step into our showroom.
+            </p>
+        </div>
+    </section>
+
+    <section id="video-showcase">
+        <h2>Video showcase</h2>
+        <div class="video-container">
+            <iframe 
+                width="560"
+                height="315"
+                frameborder="0"
+                allowfullscreen
+                src="https://www.youtube.com/embed/8b8YXwPuS_s"
+            >
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; 2023 MakerMinds. All rights reserved.</p>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let openNav = document.querySelector('.open-nav-btn');
+      let navbar = document.querySelector('.navbar');
+
+      openNav.addEventListener("click", function () {
+        navbar.classList.toggle("nav-open");
+      })
+    })
+  </script>
+</html>
